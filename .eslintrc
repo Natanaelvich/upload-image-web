@@ -12,7 +12,7 @@
       {
         "trailingComma": "es5",
         "singleQuote": true,
-        "printWidth": 70
+        "printWidth": 100
       }
     ]
   },

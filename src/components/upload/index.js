@@ -3,7 +3,7 @@ import React from 'react';
 import Dropzone from 'react-dropzone';
 import { DropContainer, UploadMessage } from './styles';
 
-export default function Upload() {
+export default function Upload({ onUpload }) {
   function renderDragMessage(isDragActive, isDragReject) {
     if (!isDragActive) {
       return (
@@ -26,7 +26,7 @@ export default function Upload() {
     );
   }
   return (
-    <Dropzone accept="image/*" onDropAccepted={() => {}}>
+    <Dropzone accept="image/*" onDropAccepted={onUpload}>
       {({
         getRootProps,
         getInputProps,
